@@ -13,7 +13,7 @@ import java.util.Set;
 
 public class App {
     public static void main(String[] args) throws IOException {
-
+        // configuration
         ScanConfig config = new ScanConfig(Path.of("C:\\backup\\Albom"),Set.of("jpg","jpeg","png"),true,true);
 
         ExtensionFileFilter filter = new ExtensionFileFilter(config.extensions());
